@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Hero-section{
+   min-width: 100%;
+   height: 100vh;
+}
+
+.Hero-img img{
+    max-width: 100%;
+    height: 700px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: white;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 50px 0 130px;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22262A;
+}
+
+nav ul li:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: black;
+    margin: auto;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+nav ul li:hover:after{
+    width: 100%;
+}
+
+.logo{
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.fa-search{
+    position: absolute;
+    left: 86%;
+    top: 4.6%;
+   cursor: pointer;
+}
+.search{
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    background: none;
+    left: -100px;
+    top: -100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    transition: all 0.5s ease;
+}
+
+
+.icons .fa-heart{
+    margin-left: -90px;
+    cursor: pointer;
+}
+.icons .fa-heart:hover{
+   color: red;
+   transform: scale(1.5);
+}
+.icons  .fa-shopping-cart{
+    cursor: pointer;
+    margin-left: 25px;
+    
+}
+.icons .fa-shopping-cart:hover{
+    color:black;
+    transform: scale(1.5);
+}
+
+
+#click:checked ~ .search{
+  top: 0;
+}
+
+
+input[type='checkbox']{
+    display: none;
+}
+
+.hero-text{
+    position: absolute;
+    left: 60%;
+    top: 80%;
+}
+
+.hero-text .first-p{
+    font-size: 18px
+}
+
+.hero-text h1{
+   font-size: 50px;
+   margin-top: 10px;
+}
+
+.hero-text .second-p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.buttons .first-btn{
+    position: relative;
+    top: 30px;
+    left: 0px;
+    width: 120px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    background: black;
+    border:none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 black;
+    transition: all 0.5s ease;
+}
+
+.buttons .second-btn{
+    position: relative;
+    top: 30px;
+    left: 40px;
+    width: 90px;
+    width: 120px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    background: black;
+    border:none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 black;
+    transition: all 0.5s ease;
+}
+
+.buttons .first-btn:hover{
+   box-shadow: inset 56px 0 0 0 white;
+   color: black;
+}
+.buttons .second-btn:hover{
+    box-shadow: inset 0 50px 0 0 white;
+    color: black;
+ }
+
+ .buttons span{
+     color:  white;
+ }
+
+
+ .CATAGORY{
+    position: relative;
+     top: 15%;
+     width: 56%;
+     height: 68vh;
+     left: 50%;
+     transform: translate(-50%);
+ }
+
+ .img1{
+     width: 430px;
+     height: 200px;
+     background: url(images/2.png)center no-repeat;
+     background-size: cover;
+ }
+
+ .img2{
+    width: 200px;
+    height: 190px;
+    margin-left: 0px;
+    margin-top: 25px;
+    background:url(images/3.png)center no-repeat;
+    background-size: cover;
+}
+
+.img3{
+    width: 200px;
+    height: 190px;
+    margin-left: 230px;
+    margin-top: -191px;
+    background: url(images/4.png)center no-repeat;
+    background-size: cover;
+}
+
+
+.img4{
+    width: 300px;
+    height: 100%;
+    margin-left: 450px;
+    margin-top: -414px;
+    background: url(images/5.png)center no-repeat;
+    background-size: cover;
+}
+
+.woman-section{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.images{
+    margin-top: 50px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    width: 190px;
+    height: 200px;
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.woman-text p{
+    margin-top: 10px;
+    margin-left: -39px;
+}
+
+.text2{
+  
+    margin-top: 230px;
+    margin-left: -200px;
+}
+.text2 h3{
+    
+    width: 210px;
+    font-size: 11px;
+}
+.text2 p{
+    display: inline;
+    font-size: 11px;
+    color:gray;
+}
+
+.text2 span{
+   color: #CF2929;
+}
+.text2 .p22 {
+    color: black;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+.man-section{
+    position: relative;
+    top: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.images{
+    margin-top: 50px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.cards {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    width: 190px;
+    height: 200px;
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+   transition: all 0.5s ease;
+}
+
+.cards img:hover{
+     transform:scale(1.2);
+}
+
+.man-text p{
+    margin-top: 10px;
+    margin-left: -39px;
+}
+
+.text2{
+    margin-top: 230px;
+    margin-left: -200px;
+}
+.text2 h3{
+    width: 210px;
+    font-size: 11px;
+}
+.text2 p{
+    display: inline;
+    font-size: 11px;
+    color:gray;
+}
+
+.text2 span{
+   color: #CF2929;
+}
+.text2 .p22 {
+    color: black;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.avone-style{
+    position: relative;
+    top: 1000px;
+    width: 100%;
+    height: 100vh;
+}
+.avone-style .avone-text{
+    position: relative;
+    margin-left: 550px;
+}
+
+.avone-images .img-1{
+    position: relative;
+    left: -350px;
+    top: 100px;
+    width: 350px;
+    height: 400px;
+    background: url(images/14.png)center no-repeat;
+    background-size: cover;
+} 
+
+.avone-images .img-2{
+    position: relative;
+    left: 50px;
+    top: -370px;
+    width: 350px;
+    height: 300px;
+    background: url(images/15.png)center no-repeat;
+    background-size: cover;
+} 
+
+.avone-images .img-3{
+    position: relative;
+    left: 250px;
+    top: -380px;
+    width: 200px;
+    height: 200px;
+    background: url(images/16.png)center no-repeat;
+    background-size: cover;
+    box-shadow: 50px 50px 0 90px white;
+} 
+
+.avone-images .show-text{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 55px;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+
+.tachen{
+    position: relative;
+    top: 1100px;
+    width: 100%;
+    height: 100vh;
+    background: url(images/17\ 1.png)center no-repeat;
+    background-size: cover;
+}
+
+.textAndbtn{
+    position: relative;
+    top: 400px;
+    margin-left: 300px;
+}
+
+.textAndbtn p{
+    font-size: 15px;
+}
+
+.textAndbtn h2{
+    font-size: 50px;
+}
+
+.textAndbtn button{
+    cursor: pointer;
+    background: #22262A;
+    color: white;
+    border:none;
+    font-size: 13px;
+    width: 130px;
+    font-weight: bold;
+    height: 23px;
+    box-shadow: inset 0 0 0 0 white;
+    transition: all 0.5s ease;
+}
+
+.textAndbtn button:hover{
+     box-shadow:  inset 0 50px 0 0 white;
+     color: black;
+}
+
+
+footer{
+    position: relative;
+    top: 1102px;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+footer .ur-logo{
+    margin-left: 200px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+footer .urLogo-text{
+    margin-left: 200px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+footer .Recive-Email{
+    margin-left: 750px;
+    margin-top: -90px;
+}
+
+footer .Emile-text{
+    margin-left: 770px;
+    margin-top: 24px;
+}
+
+footer .join{
+    margin-left: 1150px;
+    margin-top: -17px;
+}
+
+.contact .fa-facebook{
+    cursor: pointer;
+}
+.contact .fa-facebook:hover{
+    transform: scale(1.5);
+}
+.contact .fa-instagram{
+    cursor: pointer;
+    margin-left: 10px;
+} 
+.contact .fa-instagram:hover{
+    transform: scale(1.5);
+}
+
+.contact .fa-twitter{
+    cursor: pointer;
+    margin-left: 10px;
+} 
+.contact .fa-twitter:hover{
+    transform: scale(1.5);
+}
+
+.contact .fa-linkedin-in{
+    cursor: pointer;
+    margin-left: 10px;
+} 
+.contact .fa-linkedin-in:hover{
+    transform: scale(1.5);
+}
+.second-text .comilla{
+   display: flex;
+   margin-top: 200px;
+   margin-left: 200px;
+}
+.second-text .comilla-text{
+   margin-left: 50px;
+   font-size: 20px;
+   color: #22262A;
+}
+.second-text .fa-crosshairs{
+    margin-top: 5px;
+}
+
+.Emile-2{
+    width: 250px;
+    margin-left: 200px;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+}
+
+.second-text .numbers{
+    margin-left: 200px;
+}
+
+.contact{
+    margin-top: 23px;
+    margin-left: 200px;
+}
+
+.shop{
+   margin-left: 700px;
+    font-size: 17px;
+    margin-left: 600px;
+}
+
+.HELP{
+    font-size: 17px;
+    margin-top: -200px;
+    margin-left: 850px;
+}
+
+.ABOUT{
+    font-size: 17px;
+    margin-top: -205px;
+    margin-left: 1155px;
+
+}
+
+
+.last-text{
+    margin-left: 30%;
+    margin-top: 130px;
+}
